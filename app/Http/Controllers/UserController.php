@@ -22,7 +22,7 @@ class UserController extends Controller
            ->select('users.*','role_tbl.name as rolename')
            ->get();
   //   dd($users);
-return view('users.users',compact('roles'));
+return view('users.users',compact('roles','users'));
         
     }
 
